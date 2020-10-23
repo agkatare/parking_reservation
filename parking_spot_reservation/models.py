@@ -35,8 +35,9 @@ class Reservations(models.Model):
         COMPLETED = 3
         CANCELLED = 4
     reservation_id = models.UUIDField()
-    user_id = models.ForeignKey(User, on_delete=models.CASCADE)
+    user = models.ForeignKey(User, on_delete=models.CASCADE)
     spot = models.ForeignKey(ParkingSpots, on_delete=models.RESTRICT)
+    vehicle_number = models.CharField(max_length=10)
     section = models.IntegerField(choices=Sections.choices)
     start_time = models.DateTimeField()
     end_time = models.DateTimeField()
