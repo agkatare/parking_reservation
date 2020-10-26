@@ -3,14 +3,14 @@ Parking Spot Reservation System
 ## Description: 
 This system is build to manage parking spot reservation service. User can search for nearby parking spot
 using (latitude and longitude) and radius; and can reserve the parking spot. This system manages parking
-for 2-wheeler and 2-wheeler vehicles. In this we consider every parking spot is for 4-wheeler and by dividing
-it into 2 sections we can use it for 2-wheelers.
+for 2-wheeler and 4-wheeler vehicles. In this we consider every parking spot is for 4-wheeler and by dividing
+it into 2 sections we can use it for two 2-wheelers.
 For Example:
 There is one parking spot at location (10.0, 10.5) [latitude,longitude]. So on this parking spot we can park
 4-wheeler in complete area (say SECTION_AB) or we can park two 2-wheelers (one in SECTION_A and other in
 SECTION_B).
 User can cancel the reservation if required. There is an option to mark reservation spot as parked by checking-in 
-api and to free the reservation spot by checking-out api. Based on the reservation time we calculate the amount 
+api and to free the reservation spot by check-out api. Based on the reservation time we calculate the amount 
 user has been charged for parking. Admin can view all the existing reservations in the system.
 
 ## API's list:
